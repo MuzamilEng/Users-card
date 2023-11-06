@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media(max-width: 768px) {
+    .responsive_card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .res_input{
+        width: 20rem;
+    }
+    .responsive_button{
+        position: absolute;
+        top: 20rem;
+    }
+}
+@media(max-width: 1080px) {
+    .responsive_card {
+        display: grid;
+        margin: 3rem;
+        grid-template-columns: repeat(2);
+    }
+}
+@media(max-width: 1280px) {
+    .responsive_card {
+        display: grid;
+        margin: 3rem;
+        grid-template-columns: repeat(3);
+    }
+    .responsive_button{
+        position: absolute;
+        top: 7.5rem;
+        right: 2rem;
+    }
+}
+.active-button {
+    background-color: #0f111b; 
+    color: #fff; 
+    border-color: #bf1650;
+  }
+
